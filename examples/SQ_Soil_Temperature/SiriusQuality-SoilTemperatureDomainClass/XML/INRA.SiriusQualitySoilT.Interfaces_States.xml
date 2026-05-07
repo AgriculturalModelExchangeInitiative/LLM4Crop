@@ -1,0 +1,71 @@
+<?xml version="1.0" standalone="yes"?>
+<States>
+  <xs:schema id="States" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="States" msdata:IsDataSet="true" msdata:Locale="en-US">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="VarInfoVariables">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Name" type="xs:string" minOccurs="0" />
+                <xs:element name="MinValue" type="xs:double" minOccurs="0" />
+                <xs:element name="MaxValue" type="xs:double" minOccurs="0" />
+                <xs:element name="DefaultValue" type="xs:double" minOccurs="0" />
+                <xs:element name="Units" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Description" type="xs:string" minOccurs="0" />
+                <xs:element name="URL" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Description">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="DomainClassNameSpace" type="xs:string" minOccurs="0" />
+                <xs:element name="DomainTypeName" type="xs:string" minOccurs="0" />
+                <xs:element name="DomainTypeURL" type="xs:string" minOccurs="0" />
+                <xs:element name="DomainTypeDescription" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <VarInfoVariables>
+    <Name>maxTSoil</Name>
+    <MinValue>-30</MinValue>
+    <MaxValue>80</MaxValue>
+    <DefaultValue>20</DefaultValue>
+    <Units>°C</Units>
+    <Type>double</Type>
+    <Description>Maximum Soil Temperature</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>minTSoil</Name>
+    <MinValue>-30</MinValue>
+    <MaxValue>80</MaxValue>
+    <DefaultValue>20</DefaultValue>
+    <Units>°C</Units>
+    <Type>double</Type>
+    <Description>Minimum Soil Temperature</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>hourlySoilT</Name>
+    <MinValue>-30</MinValue>
+    <MaxValue>80</MaxValue>
+    <DefaultValue>20</DefaultValue>
+    <Units>°C</Units>
+    <Type>double[24]</Type>
+    <Description>Hourly Soil Temperature</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <Description>
+    <DomainClassNameSpace>INRA.SiriusQualitySoilT.Interfaces</DomainClassNameSpace>
+    <DomainTypeName>States</DomainTypeName>
+    <DomainTypeURL>http://</DomainTypeURL>
+    <DomainTypeDescription>State variables of SoilT</DomainTypeDescription>
+  </Description>
+</States>

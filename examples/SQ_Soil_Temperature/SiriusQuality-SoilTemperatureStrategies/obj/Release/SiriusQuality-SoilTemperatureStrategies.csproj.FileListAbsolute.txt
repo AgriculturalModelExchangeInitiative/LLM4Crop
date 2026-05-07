@@ -1,0 +1,22 @@
+C:\Users\mancealo\Documents\Sirius Quality\branches\MergDevSoilSplitNWOct\Code\SiriusQuality-SoilTemperatureStrategies\bin\Release\SiriusQuality-SoilTemperatureStrategies.dll
+C:\Users\mancealo\Documents\Sirius Quality\branches\MergDevSoilSplitNWOct\Code\SiriusQuality-SoilTemperatureStrategies\bin\Release\SiriusQuality-SoilTemperatureStrategies.pdb
+C:\Users\mancealo\Documents\Sirius Quality\branches\MergDevSoilSplitNWOct\Code\SiriusQuality-SoilTemperatureStrategies\bin\Release\CRA.AgroManagement2014.dll
+C:\Users\mancealo\Documents\Sirius Quality\branches\MergDevSoilSplitNWOct\Code\SiriusQuality-SoilTemperatureStrategies\bin\Release\CRA.AgroManagement2014.Impacts.dll
+C:\Users\mancealo\Documents\Sirius Quality\branches\MergDevSoilSplitNWOct\Code\SiriusQuality-SoilTemperatureStrategies\bin\Release\CRA.AgroManagement2014.Rules.dll
+C:\Users\mancealo\Documents\Sirius Quality\branches\MergDevSoilSplitNWOct\Code\SiriusQuality-SoilTemperatureStrategies\bin\Release\CRA.ModelLayer.dll
+C:\Users\mancealo\Documents\Sirius Quality\branches\MergDevSoilSplitNWOct\Code\SiriusQuality-SoilTemperatureStrategies\bin\Release\SiriusQuality-SoilTemperatureDomainClass.dll
+C:\Users\mancealo\Documents\Sirius Quality\branches\MergDevSoilSplitNWOct\Code\SiriusQuality-SoilTemperatureStrategies\bin\Release\SiriusQuality-SoilTemperatureDomainClass.pdb
+C:\Users\mancealo\Documents\Sirius Quality\branches\MergDevSoilSplitNWOct\Code\SiriusQuality-SoilTemperatureStrategies\obj\Release\SiriusQuality-SoilTemperatureStrategies.csprojResolveAssemblyReference.cache
+C:\Users\mancealo\Documents\Sirius Quality\branches\MergDevSoilSplitNWOct\Code\SiriusQuality-SoilTemperatureStrategies\obj\Release\SiriusQuality-SoilTemperatureStrategies.dll
+C:\Users\mancealo\Documents\Sirius Quality\branches\MergDevSoilSplitNWOct\Code\SiriusQuality-SoilTemperatureStrategies\obj\Release\SiriusQuality-SoilTemperatureStrategies.pdb
+C:\Users\mancealo\Dropbox\CLIC_INRA_CropSyst\Shared source code\MergDevSoilSplitNWOct\Code\SiriusQuality-SoilTemperatureStrategies\bin\Release\SiriusQuality-SoilTemperatureStrategies.dll
+C:\Users\mancealo\Dropbox\CLIC_INRA_CropSyst\Shared source code\MergDevSoilSplitNWOct\Code\SiriusQuality-SoilTemperatureStrategies\bin\Release\SiriusQuality-SoilTemperatureStrategies.pdb
+C:\Users\mancealo\Dropbox\CLIC_INRA_CropSyst\Shared source code\MergDevSoilSplitNWOct\Code\SiriusQuality-SoilTemperatureStrategies\bin\Release\CRA.AgroManagement2014.dll
+C:\Users\mancealo\Dropbox\CLIC_INRA_CropSyst\Shared source code\MergDevSoilSplitNWOct\Code\SiriusQuality-SoilTemperatureStrategies\bin\Release\CRA.AgroManagement2014.Impacts.dll
+C:\Users\mancealo\Dropbox\CLIC_INRA_CropSyst\Shared source code\MergDevSoilSplitNWOct\Code\SiriusQuality-SoilTemperatureStrategies\bin\Release\CRA.AgroManagement2014.Rules.dll
+C:\Users\mancealo\Dropbox\CLIC_INRA_CropSyst\Shared source code\MergDevSoilSplitNWOct\Code\SiriusQuality-SoilTemperatureStrategies\bin\Release\CRA.ModelLayer.dll
+C:\Users\mancealo\Dropbox\CLIC_INRA_CropSyst\Shared source code\MergDevSoilSplitNWOct\Code\SiriusQuality-SoilTemperatureStrategies\bin\Release\SiriusQuality-SoilTemperatureDomainClass.dll
+C:\Users\mancealo\Dropbox\CLIC_INRA_CropSyst\Shared source code\MergDevSoilSplitNWOct\Code\SiriusQuality-SoilTemperatureStrategies\bin\Release\SiriusQuality-SoilTemperatureDomainClass.pdb
+C:\Users\mancealo\Dropbox\CLIC_INRA_CropSyst\Shared source code\MergDevSoilSplitNWOct\Code\SiriusQuality-SoilTemperatureStrategies\obj\Release\SiriusQuality-SoilTemperatureStrategies.csprojResolveAssemblyReference.cache
+C:\Users\mancealo\Dropbox\CLIC_INRA_CropSyst\Shared source code\MergDevSoilSplitNWOct\Code\SiriusQuality-SoilTemperatureStrategies\obj\Release\SiriusQuality-SoilTemperatureStrategies.dll
+C:\Users\mancealo\Dropbox\CLIC_INRA_CropSyst\Shared source code\MergDevSoilSplitNWOct\Code\SiriusQuality-SoilTemperatureStrategies\obj\Release\SiriusQuality-SoilTemperatureStrategies.pdb

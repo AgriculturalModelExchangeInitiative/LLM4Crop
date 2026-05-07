@@ -1,0 +1,161 @@
+<?xml version="1.0" standalone="yes"?>
+<Exogenous>
+  <xs:schema id="Exogenous" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="Exogenous" msdata:IsDataSet="true" msdata:Locale="en-US">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="VarInfoVariables">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Name" type="xs:string" minOccurs="0" />
+                <xs:element name="MinValue" type="xs:double" minOccurs="0" />
+                <xs:element name="MaxValue" type="xs:double" minOccurs="0" />
+                <xs:element name="DefaultValue" type="xs:double" minOccurs="0" />
+                <xs:element name="Units" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Description" type="xs:string" minOccurs="0" />
+                <xs:element name="URL" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Description">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="DomainClassNameSpace" type="xs:string" minOccurs="0" />
+                <xs:element name="DomainTypeName" type="xs:string" minOccurs="0" />
+                <xs:element name="DomainTypeURL" type="xs:string" minOccurs="0" />
+                <xs:element name="DomainTypeDescription" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <VarInfoVariables>
+    <Name>AirTemperatureMaximum</Name>
+    <MinValue>-40</MinValue>
+    <MaxValue>60</MaxValue>
+    <DefaultValue>15</DefaultValue>
+    <Units>°C</Units>
+    <Type>double</Type>
+    <Description>Maximum daily air temperature</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>AirTemperatureMinimum</Name>
+    <MinValue>-60</MinValue>
+    <MaxValue>50</MaxValue>
+    <DefaultValue>5</DefaultValue>
+    <Units>°C</Units>
+    <Type>double</Type>
+    <Description>Minimum daily air temperature</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>LatentHeatFlux</Name>
+    <MinValue>-10</MinValue>
+    <MaxValue>1000</MaxValue>
+    <DefaultValue>0</DefaultValue>
+    <Units>W m-2</Units>
+    <Type>double</Type>
+    <Description>Surface latent heat flux as an optional of temperature model</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>NetRadiation</Name>
+    <MinValue>-10</MinValue>
+    <MaxValue>1000</MaxValue>
+    <DefaultValue>0</DefaultValue>
+    <Units>W m-2 </Units>
+    <Type>double</Type>
+    <Description>Net radiation as an optional of temperature model</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>GlobalSolarRadiation</Name>
+    <MinValue>0</MinValue>
+    <MaxValue>50</MaxValue>
+    <DefaultValue>15</DefaultValue>
+    <Units>Mj m-2 d-1</Units>
+    <Type>double</Type>
+    <Description>Daily global solar radiation</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>DayLength</Name>
+    <MinValue>0</MinValue>
+    <MaxValue>24</MaxValue>
+    <DefaultValue>10</DefaultValue>
+    <Units>h</Units>
+    <Type>double</Type>
+    <Description>Length of the day</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>AirTemperatureAnnualAverage</Name>
+    <MinValue>-40</MinValue>
+    <MaxValue>50</MaxValue>
+    <DefaultValue>15</DefaultValue>
+    <Units>°C</Units>
+    <Type>double</Type>
+    <Description>Annual average air temperature</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>Albedo</Name>
+    <MinValue>0</MinValue>
+    <MaxValue>1</MaxValue>
+    <DefaultValue>0.2</DefaultValue>
+    <Units>unitless</Units>
+    <Type>double</Type>
+    <Description>Albedo of soil</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>WaterEquivalentOfSnowPack</Name>
+    <MinValue>0</MinValue>
+    <MaxValue>1000</MaxValue>
+    <DefaultValue>10</DefaultValue>
+    <Units>mm</Units>
+    <Type>double</Type>
+    <Description>Water equivalent of snow pack</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>AirTemperatureHourly</Name>
+    <MinValue>-50</MinValue>
+    <MaxValue>50</MaxValue>
+    <DefaultValue>15</DefaultValue>
+    <Units>°C</Units>
+    <Type>double[24]</Type>
+    <Description>Hourly air temperature</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>HourOfSunrise</Name>
+    <MinValue>0</MinValue>
+    <MaxValue>24</MaxValue>
+    <DefaultValue>6</DefaultValue>
+    <Units>h</Units>
+    <Type>double</Type>
+    <Description>Hour of sunrise</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>HourOfSunset</Name>
+    <MinValue>0</MinValue>
+    <MaxValue>24</MaxValue>
+    <DefaultValue>17</DefaultValue>
+    <Units>h</Units>
+    <Type>double</Type>
+    <Description>Hour of sunset</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <Description>
+    <DomainClassNameSpace>UNIMI.SoilT.Interfaces</DomainClassNameSpace>
+    <DomainTypeName>Exogenous</DomainTypeName>
+    <DomainTypeURL>http://</DomainTypeURL>
+    <DomainTypeDescription>Exogenous variables of SoilT component </DomainTypeDescription>
+  </Description>
+</Exogenous>

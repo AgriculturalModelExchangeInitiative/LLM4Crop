@@ -1,0 +1,9 @@
+C:\Users\mancealo\Documents\Sirius Quality\branches\MergDevSoilSplitNWOct\Code\SiriusQuality-SoilTemperatureDomainClasses\bin\Release\SiriusQuality-SoilTemperatureDomainClasses.dll
+C:\Users\mancealo\Documents\Sirius Quality\branches\MergDevSoilSplitNWOct\Code\SiriusQuality-SoilTemperatureDomainClasses\bin\Release\SiriusQuality-SoilTemperatureDomainClasses.pdb
+C:\Users\mancealo\Documents\Sirius Quality\branches\MergDevSoilSplitNWOct\Code\SiriusQuality-SoilTemperatureDomainClasses\bin\Release\CRA.AgroManagement2014.dll
+C:\Users\mancealo\Documents\Sirius Quality\branches\MergDevSoilSplitNWOct\Code\SiriusQuality-SoilTemperatureDomainClasses\bin\Release\CRA.AgroManagement2014.Impacts.dll
+C:\Users\mancealo\Documents\Sirius Quality\branches\MergDevSoilSplitNWOct\Code\SiriusQuality-SoilTemperatureDomainClasses\bin\Release\CRA.AgroManagement2014.Rules.dll
+C:\Users\mancealo\Documents\Sirius Quality\branches\MergDevSoilSplitNWOct\Code\SiriusQuality-SoilTemperatureDomainClasses\bin\Release\CRA.ModelLayer.dll
+C:\Users\mancealo\Documents\Sirius Quality\branches\MergDevSoilSplitNWOct\Code\SiriusQuality-SoilTemperatureDomainClasses\obj\Release\SiriusQuality-SoilTemperatureDomainClasses.csprojResolveAssemblyReference.cache
+C:\Users\mancealo\Documents\Sirius Quality\branches\MergDevSoilSplitNWOct\Code\SiriusQuality-SoilTemperatureDomainClasses\obj\Release\SiriusQuality-SoilTemperatureDomainClasses.dll
+C:\Users\mancealo\Documents\Sirius Quality\branches\MergDevSoilSplitNWOct\Code\SiriusQuality-SoilTemperatureDomainClasses\obj\Release\SiriusQuality-SoilTemperatureDomainClasses.pdb

@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F317877C-2C3F-410B-8135-4D6179A98BA5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UNIMI.SoilT.Interfaces</RootNamespace>
+    <AssemblyName>UNIMI.SoilT.Interfaces</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CRA.AgroManagement2014, Version=0.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dependencies\CRA.AgroManagement2014.dll</HintPath>
+    </Reference>
+    <Reference Include="CRA.AgroManagement2014.Impacts, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dependencies\CRA.AgroManagement2014.Impacts.dll</HintPath>
+    </Reference>
+    <Reference Include="CRA.AgroManagement2014.Rules">
+      <HintPath>..\dependencies\CRA.AgroManagement2014.Rules.dll</HintPath>
+    </Reference>
+    <Reference Include="CRA.ModelLayer, Version=1.0.6212.29140, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dependencies\CRA.ModelLayer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DomainClasses\Auxiliary.cs" />
+    <Compile Include="DomainClasses\AuxiliaryVarInfo.cs" />
+    <Compile Include="DomainClasses\Exogenous.cs" />
+    <Compile Include="DomainClasses\ExogenousVarInfo.cs" />
+    <Compile Include="DomainClasses\Rates.cs" />
+    <Compile Include="DomainClasses\RatesVarInfo.cs" />
+    <Compile Include="DomainClasses\States.cs" />
+    <Compile Include="DomainClasses\StatesExternal.cs" />
+    <Compile Include="DomainClasses\StatesExternalVarInfo.cs" />
+    <Compile Include="DomainClasses\StatesVarInfo.cs" />
+    <Compile Include="Interfaces\ISoilT.cs" />
+    <Compile Include="Interfaces\IStrategySoilT.cs" />
+    <Compile Include="Interfaces\SoilTAPI.cs" />
+    <Compile Include="Interfaces\XmlTags.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DomainClasses\Layer\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

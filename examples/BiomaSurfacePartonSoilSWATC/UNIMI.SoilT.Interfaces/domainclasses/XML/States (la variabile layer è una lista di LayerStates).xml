@@ -1,0 +1,71 @@
+<?xml version="1.0" standalone="yes"?>
+<States>
+  <xs:schema id="States" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="States" msdata:IsDataSet="true" msdata:Locale="en-US">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="VarInfoVariables">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Name" type="xs:string" minOccurs="0" />
+                <xs:element name="MinValue" type="xs:double" minOccurs="0" />
+                <xs:element name="MaxValue" type="xs:double" minOccurs="0" />
+                <xs:element name="DefaultValue" type="xs:double" minOccurs="0" />
+                <xs:element name="Units" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Description" type="xs:string" minOccurs="0" />
+                <xs:element name="URL" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Description">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="DomainClassNameSpace" type="xs:string" minOccurs="0" />
+                <xs:element name="DomainTypeName" type="xs:string" minOccurs="0" />
+                <xs:element name="DomainTypeURL" type="xs:string" minOccurs="0" />
+                <xs:element name="DomainTypeDescription" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <VarInfoVariables>
+    <Name>Layers</Name>
+    <MinValue>0</MinValue>
+    <MaxValue>0</MaxValue>
+    <DefaultValue>0</DefaultValue>
+    <Units>unitless</Units>
+    <Type>double</Type>
+    <Description>Soil layer states</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>SurfaceSoilTemperature</Name>
+    <MinValue>-60</MinValue>
+    <MaxValue>60</MaxValue>
+    <DefaultValue>25</DefaultValue>
+    <Units>°C</Units>
+    <Type>double</Type>
+    <Description>Average surface soil temperature</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>SoilProfileDepth</Name>
+    <MinValue>0</MinValue>
+    <MaxValue>50</MaxValue>
+    <DefaultValue>3</DefaultValue>
+    <Units>m</Units>
+    <Type>double</Type>
+    <Description>Soil profile depth</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <Description>
+    <DomainClassNameSpace>UNIMI.SoilT.Interfaces</DomainClassNameSpace>
+    <DomainTypeName>States</DomainTypeName>
+    <DomainTypeURL>http://</DomainTypeURL>
+    <DomainTypeDescription>State variables of SoilT component </DomainTypeDescription>
+  </Description>
+</States>

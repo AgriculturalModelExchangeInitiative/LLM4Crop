@@ -1,0 +1,11 @@
+C:\git_amei_bioma\amei_bioma\SoilTOriginalImplementationNewType\UNIMI.SoilT.Interfaces\obj\Debug\UNIMI.SoilT.Interfaces.csproj.AssemblyReference.cache
+C:\git_amei_bioma\amei_bioma\SoilTOriginalImplementationNewType\UNIMI.SoilT.Interfaces\obj\Debug\UNIMI.SoilT.Interfaces.csproj.CoreCompileInputs.cache
+C:\git_amei_bioma\amei_bioma\SoilTOriginalImplementationNewType\UNIMI.SoilT.Interfaces\bin\Debug\UNIMI.SoilT.Interfaces.dll
+C:\git_amei_bioma\amei_bioma\SoilTOriginalImplementationNewType\UNIMI.SoilT.Interfaces\bin\Debug\UNIMI.SoilT.Interfaces.pdb
+C:\git_amei_bioma\amei_bioma\SoilTOriginalImplementationNewType\UNIMI.SoilT.Interfaces\bin\Debug\CRA.AgroManagement2014.dll
+C:\git_amei_bioma\amei_bioma\SoilTOriginalImplementationNewType\UNIMI.SoilT.Interfaces\bin\Debug\CRA.AgroManagement2014.Impacts.dll
+C:\git_amei_bioma\amei_bioma\SoilTOriginalImplementationNewType\UNIMI.SoilT.Interfaces\bin\Debug\CRA.AgroManagement2014.Rules.dll
+C:\git_amei_bioma\amei_bioma\SoilTOriginalImplementationNewType\UNIMI.SoilT.Interfaces\bin\Debug\CRA.ModelLayer.dll
+C:\git_amei_bioma\amei_bioma\SoilTOriginalImplementationNewType\UNIMI.SoilT.Interfaces\obj\Debug\UNIMI.SoilT.Interfaces.csproj.CopyComplete
+C:\git_amei_bioma\amei_bioma\SoilTOriginalImplementationNewType\UNIMI.SoilT.Interfaces\obj\Debug\UNIMI.SoilT.Interfaces.dll
+C:\git_amei_bioma\amei_bioma\SoilTOriginalImplementationNewType\UNIMI.SoilT.Interfaces\obj\Debug\UNIMI.SoilT.Interfaces.pdb

@@ -1,0 +1,221 @@
+<?xml version="1.0" standalone="yes"?>
+<LayerStates>
+  <xs:schema id="LayerStates" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="LayerStates" msdata:IsDataSet="true" msdata:Locale="en-US">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="VarInfoVariables">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Name" type="xs:string" minOccurs="0" />
+                <xs:element name="MinValue" type="xs:double" minOccurs="0" />
+                <xs:element name="MaxValue" type="xs:double" minOccurs="0" />
+                <xs:element name="DefaultValue" type="xs:double" minOccurs="0" />
+                <xs:element name="Units" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Description" type="xs:string" minOccurs="0" />
+                <xs:element name="URL" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Description">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="DomainClassNameSpace" type="xs:string" minOccurs="0" />
+                <xs:element name="DomainTypeName" type="xs:string" minOccurs="0" />
+                <xs:element name="DomainTypeURL" type="xs:string" minOccurs="0" />
+                <xs:element name="DomainTypeDescription" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <VarInfoVariables>
+    <Name>HeatCapacity</Name>
+    <MinValue>0</MinValue>
+    <MaxValue>300</MaxValue>
+    <DefaultValue>20</DefaultValue>
+    <Units>MJ m-3 °C-1</Units>
+    <Type>double</Type>
+    <Description>Volumetric specific heat of soil</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>SoilTemperatureByLayers</Name>
+    <MinValue>-60</MinValue>
+    <MaxValue>60</MaxValue>
+    <DefaultValue>15</DefaultValue>
+    <Units>°C</Units>
+    <Type>double</Type>
+    <Description>Soil temperature of each layer</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>TemperatureConductance</Name>
+    <MinValue>0</MinValue>
+    <MaxValue>50</MaxValue>
+    <DefaultValue>10</DefaultValue>
+    <Units>W m-1 °C-1</Units>
+    <Type>double</Type>
+    <Description>Temperature conductance</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>LayerThickness</Name>
+    <MinValue>0.005</MinValue>
+    <MaxValue>3</MaxValue>
+    <DefaultValue>0.05</DefaultValue>
+    <Units>m</Units>
+    <Type>double</Type>
+    <Description>Soil layer thickness</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>Clay</Name>
+    <MinValue>0</MinValue>
+    <MaxValue>100</MaxValue>
+    <DefaultValue>0</DefaultValue>
+    <Units>%</Units>
+    <Type>double</Type>
+    <Description>Clay content of soil layer</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>BulkDensity</Name>
+    <MinValue>0.9</MinValue>
+    <MaxValue>1.8</MaxValue>
+    <DefaultValue>1.3</DefaultValue>
+    <Units>t m-3</Units>
+    <Type>double</Type>
+    <Description>Bulk density</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>VolumetricWaterContent</Name>
+    <MinValue>0</MinValue>
+    <MaxValue>0.8</MaxValue>
+    <DefaultValue>0.25</DefaultValue>
+    <Units>m3 m-3</Units>
+    <Type>double</Type>
+    <Description>Volumetric soil water content</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>SoilTemperatureByLayersHourly</Name>
+    <MinValue>-50</MinValue>
+    <MaxValue>50</MaxValue>
+    <DefaultValue>15</DefaultValue>
+    <Units>°C</Units>
+    <Type>double[24]</Type>
+    <Description>Hourly soil temperature by layers</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>SoilTemperaturePreviousDay</Name>
+    <MinValue>-50</MinValue>
+    <MaxValue>50</MaxValue>
+    <DefaultValue>115</DefaultValue>
+    <Units>°C</Units>
+    <Type>double</Type>
+    <Description>Last hourly temperature of the day</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>SoilTemperatureRangeByLayers</Name>
+    <MinValue>0</MinValue>
+    <MaxValue>50</MaxValue>
+    <DefaultValue>15</DefaultValue>
+    <Units>°C</Units>
+    <Type>double</Type>
+    <Description>Soil temperature range by layers</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>SoilTemperatureMaximum</Name>
+    <MinValue>-60</MinValue>
+    <MaxValue>60</MaxValue>
+    <DefaultValue>15</DefaultValue>
+    <Units>°C</Units>
+    <Type>double</Type>
+    <Description>Maximum soil temperature by layers</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>SoilTemperatureMinimum</Name>
+    <MinValue>-60</MinValue>
+    <MaxValue>60</MaxValue>
+    <DefaultValue>15</DefaultValue>
+    <Units>°C</Units>
+    <Type>double</Type>
+    <Description>Minimum soil temperature by layers</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>Sand</Name>
+    <MinValue>0</MinValue>
+    <MaxValue>100</MaxValue>
+    <DefaultValue>30</DefaultValue>
+    <Units>%</Units>
+    <Type>double</Type>
+    <Description>Sand content of soil layer</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>Silt</Name>
+    <MinValue>0</MinValue>
+    <MaxValue>100</MaxValue>
+    <DefaultValue>20</DefaultValue>
+    <Units>%</Units>
+    <Type>double</Type>
+    <Description>Silt content of soil layer</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>OrganicMatter</Name>
+    <MinValue>0</MinValue>
+    <MaxValue>20</MaxValue>
+    <DefaultValue>1.5</DefaultValue>
+    <Units>%</Units>
+    <Type>double</Type>
+    <Description>Organic matter content of soil layer</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>VolumetricWaterContentAtSaturation</Name>
+    <MinValue>0</MinValue>
+    <MaxValue>1</MaxValue>
+    <DefaultValue>0.8</DefaultValue>
+    <Units>m3 m-3</Units>
+    <Type>double</Type>
+    <Description>Volumetric water content at saturation</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>ThermalConductivity</Name>
+    <MinValue>0.025</MinValue>
+    <MaxValue>8</MaxValue>
+    <DefaultValue>1</DefaultValue>
+    <Units>W m-1 K-1</Units>
+    <Type>double</Type>
+    <Description>Thermal conductivity of soil layer</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>ThermalDiffusivity</Name>
+    <MinValue>0</MinValue>
+    <MaxValue>1</MaxValue>
+    <DefaultValue>0.0025</DefaultValue>
+    <Units>mm s-1</Units>
+    <Type>double</Type>
+    <Description>Thermal diffusivity of soil layer</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <Description>
+    <DomainClassNameSpace>UNIMI.SoilT.Interfaces</DomainClassNameSpace>
+    <DomainTypeName>LayerStates</DomainTypeName>
+    <DomainTypeURL>http://</DomainTypeURL>
+    <DomainTypeDescription>Soil layer state variables of SoilT component </DomainTypeDescription>
+  </Description>
+</LayerStates>

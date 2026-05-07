@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EEA0AA6C-3126-4C17-A639-DFFB08FC73AA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SiriusQuality_SoilTemperatureDomainClass</RootNamespace>
+    <AssemblyName>SiriusQuality-SoilTemperatureDomainClass</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CRA.AgroManagement2014">
+      <HintPath>..\..\..\TestMeteo\Code\SiriusQuality-MeteoComponent\bin\Debug\CRA.AgroManagement2014.dll</HintPath>
+    </Reference>
+    <Reference Include="CRA.AgroManagement2014.Impacts">
+      <HintPath>..\..\..\TestMeteo\Code\SiriusQuality-MeteoComponent\bin\Debug\CRA.AgroManagement2014.Impacts.dll</HintPath>
+    </Reference>
+    <Reference Include="CRA.AgroManagement2014.Rules">
+      <HintPath>..\..\..\TestMeteo\Code\SiriusQuality-MeteoComponent\bin\Debug\CRA.AgroManagement2014.Rules.dll</HintPath>
+    </Reference>
+    <Reference Include="CRA.ModelLayer">
+      <HintPath>..\..\..\TestMeteo\Code\SiriusQuality-MeteoComponent\bin\Debug\CRA.ModelLayer.dll</HintPath>
+    </Reference>
+    <Reference Include="MathNet.Numerics, Version=4.12.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MathNet.Numerics.4.12.0\lib\net461\MathNet.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="API\IStrategySiriusQualitySoilT.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="API\SiriusQualitySoilTAPI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="API\TraceHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="domainClass\DeepLayerStates.cs" />
+    <Compile Include="domainClass\DeepLayerStatesVarInfo.cs" />
+    <Compile Include="domainClass\Exogenous.cs" />
+    <Compile Include="domainClass\ExogenousVarInfo.cs" />
+    <Compile Include="domainClass\RatesExternal.cs" />
+    <Compile Include="domainClass\RatesExternalVarInfo.cs" />
+    <Compile Include="domainClass\States.cs" />
+    <Compile Include="domainClass\StatesVarInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

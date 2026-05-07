@@ -1,0 +1,61 @@
+<?xml version="1.0" standalone="yes"?>
+<StatesExternal>
+  <xs:schema id="StatesExternal" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="StatesExternal" msdata:IsDataSet="true" msdata:Locale="en-US">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="VarInfoVariables">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Name" type="xs:string" minOccurs="0" />
+                <xs:element name="MinValue" type="xs:double" minOccurs="0" />
+                <xs:element name="MaxValue" type="xs:double" minOccurs="0" />
+                <xs:element name="DefaultValue" type="xs:double" minOccurs="0" />
+                <xs:element name="Units" type="xs:string" minOccurs="0" />
+                <xs:element name="Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Description" type="xs:string" minOccurs="0" />
+                <xs:element name="URL" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Description">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="DomainClassNameSpace" type="xs:string" minOccurs="0" />
+                <xs:element name="DomainTypeName" type="xs:string" minOccurs="0" />
+                <xs:element name="DomainTypeURL" type="xs:string" minOccurs="0" />
+                <xs:element name="DomainTypeDescription" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <VarInfoVariables>
+    <Name>GreenLeafAreaIndex</Name>
+    <MinValue>0</MinValue>
+    <MaxValue>20</MaxValue>
+    <DefaultValue>4</DefaultValue>
+    <Units>m2 m-2</Units>
+    <Type>double</Type>
+    <Description>Green leaf area index</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <VarInfoVariables>
+    <Name>AboveGroundBiomass</Name>
+    <MinValue>0</MinValue>
+    <MaxValue>60</MaxValue>
+    <DefaultValue>3</DefaultValue>
+    <Units>Kg ha-1</Units>
+    <Type>double</Type>
+    <Description>Above ground biomass</Description>
+    <URL>http://</URL>
+  </VarInfoVariables>
+  <Description>
+    <DomainClassNameSpace>UNIMI.SoilT.Interfaces</DomainClassNameSpace>
+    <DomainTypeName>StatesExternal</DomainTypeName>
+    <DomainTypeURL>http://</DomainTypeURL>
+    <DomainTypeDescription>State external variables of SoilT component </DomainTypeDescription>
+  </Description>
+</StatesExternal>

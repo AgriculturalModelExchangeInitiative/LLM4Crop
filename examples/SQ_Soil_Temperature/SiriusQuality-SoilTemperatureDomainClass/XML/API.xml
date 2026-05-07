@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="yes"?>
+<API_Definitions>
+  <Specifications>
+    <Col_FileName>C:\Users\mancealo\Documents\Sirius Quality\branches\TestSoilMay\Code\SiriusQuality-SoilTemperatureDomainClasses\XML\API.xml</Col_FileName>
+    <Col_Postfix>SiriusQualitySoilT</Col_Postfix>
+    <Col_MainMethod>Estimate</Col_MainMethod>
+    <Col_MethodParameters>( DeepLayerStates d, DeepLayerStates d1, Exogenous e, RatesExternal r, States s);</Col_MethodParameters>
+    <Col_NameSpace>INRA.SiriusQualitySoilT.Interfaces</Col_NameSpace>
+  </Specifications>
+  <DomainClasses>
+    <Col_ClassFileNames>DeepLayerStates</Col_ClassFileNames>
+  </DomainClasses>
+  <DomainClasses>
+    <Col_ClassFileNames>Exogenous</Col_ClassFileNames>
+  </DomainClasses>
+  <DomainClasses>
+    <Col_ClassFileNames>RatesExternal</Col_ClassFileNames>
+  </DomainClasses>
+  <DomainClasses>
+    <Col_ClassFileNames>States</Col_ClassFileNames>
+  </DomainClasses>
+</API_Definitions>

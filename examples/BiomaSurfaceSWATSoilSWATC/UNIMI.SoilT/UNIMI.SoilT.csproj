@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B14A48C2-22E0-4B94-9DE4-5D4917ED25AC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UNIMI.SoilT</RootNamespace>
+    <AssemblyName>UNIMI.SoilT</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CRA.AgroManagement2014, Version=0.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dependencies\CRA.AgroManagement2014.dll</HintPath>
+    </Reference>
+    <Reference Include="CRA.AgroManagement2014.Impacts, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dependencies\CRA.AgroManagement2014.Impacts.dll</HintPath>
+    </Reference>
+    <Reference Include="CRA.AgroManagement2014.Rules, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dependencies\CRA.AgroManagement2014.Rules.dll</HintPath>
+    </Reference>
+    <Reference Include="CRA.ModelLayer, Version=1.0.6212.29140, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dependencies\CRA.ModelLayer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Strategies\Composite\SurfacePartonSoilCampbellC.cs" />
+    <Compile Include="Strategies\Composite\SurfacePartonSoilSWATC.cs" />
+    <Compile Include="Strategies\Composite\SurfacePartonSoilSWATHourlyPartonC.cs" />
+    <Compile Include="Strategies\Composite\SurfaceSWATSoilSWATC.cs" />
+    <Compile Include="Strategies\Composite\ThermalDiffusivityC.cs" />
+    <Compile Include="Strategies\Parameters\SurfacePartonSoilSWATHourlyPartonC_Parameters.cs" />
+    <Compile Include="Strategies\Simple\Soil\HourlySoilTemperaturesPartonLogan.cs" />
+    <Compile Include="Strategies\Simple\Soil\RangeOfSoilTemperaturesDAYCENT.cs" />
+    <Compile Include="Strategies\Simple\Soil\SoilTemperatureCampbell.cs" />
+    <Compile Include="Strategies\Simple\Soil\SoilTemperatureSWAT.cs" />
+    <Compile Include="Strategies\Simple\Soil\ThermalConductivitySIMULAT.cs" />
+    <Compile Include="Strategies\Simple\Soil\VolumetricHeatCapacityKluitenberg.cs" />
+    <Compile Include="Strategies\Simple\Surface\SurfaceTemperatureParton.cs" />
+    <Compile Include="Strategies\Simple\Surface\SurfaceTemperatureSWAT.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UNIMI.SoilT.Interfaces\UNIMI.SoilT.Interfaces.csproj">
+      <Project>{F317877C-2C3F-410B-8135-4D6179A98BA5}</Project>
+      <Name>UNIMI.SoilT.Interfaces</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

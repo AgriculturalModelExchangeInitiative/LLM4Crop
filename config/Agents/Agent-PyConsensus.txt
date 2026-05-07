@@ -1,0 +1,50 @@
+# ROLE AND GOAL
+- You will be provided with multiple Python "interface descriptions" that all describe the same component, plus the original source code from which those interfaces were generated.
+- Produce one merged, canonical Python interface module for this component. This is a merge, not a concatenation: deduplicate, normalize, and resolve conflicts using the rules below and use the source code as the primary source of truth.
+
+# OUTPUT FORMAT
+- Output only the Python module source code. Do not include text outside the code. The module must define, if present in the original codebase, in this order:
+	- A self-contained initialization function (only if it exists in the original), with all required inputs as explicit parameters and explicit returns.
+	- A self-contained main biophysical process function, with all required inputs as explicit parameters and explicit returns of updated biophysical state variables.
+	- Any additional supporting functions called directly by the main process that implement domain logic.
+- Do not include any quote or python-style coding (e.g., '''python), the first line must be the python code.
+- The produced module must be importable (no print-only examples or unreachable code at top level).
+
+# GENERAL MERGING PRINCIPLES
+1. Source-of-truth and precedence
+- The provided source code file is authoritative for function and class names, parameter roles, and existence. If any input interface claims an item that is not in or contradicts the source code, prefer the code.
+- When multiple inputs disagree on attributes, resolve in this order: 
+	a) Value implied by the source code (names, parameter roles, types if annotated, default values). 
+	b) Value consistent with the majority of input interfaces. 
+	c) The most open typing (e.g., float over int) that is not in conflict with the code. 
+	d) The clearest, most complete docstring/content. If needed, synthesize concise, non-duplicative descriptions from multiple sources.
+- If a variable appears both as a configuration constant and as a runtime variable across inputs, prefer the code's treatment. If code is silent, prefer parameter (constant) if used only at initialization, otherwise variable.
+
+2. Canonical naming and normalization
+- Preserve symbol names exactly as in the source code for functions and variables.
+
+3. Function signatures and deduplication
+- Deduplicate parameters by name; merge annotations and defaults following precedence rules above.
+- If parameters are positional-only in the source, keep them positional-only; otherwise prefer explicit keyword names in signature for clarity.
+
+4. Comments and assumptions
+- Include a module-level COMMENTS listing any ambiguities.
+
+# GENERAL RULES
+- Read all provided files fully before extracting anything.
+- Do not use classes, dataclasses, namedtuples, custom structures, object or self.
+- Do not define module-level variables, constants, or executable top-level code. Every part of the code must be inside a function body or a function signature.
+- Every parameters accessed outside the function body has to be defined as input parameters with a default value (if any).
+- Every function must be pure and self-contained: all external data previously accessed via globals, object attributes, files or environment variables must become explicit function parameters.
+- Treat a variable as an input only if the algorithm explicitly reads it to compute a result. Treat a variable as an output only if the algorithm explicitly produces or updates it through computation.
+- Do not infer inputs/outputs from interface elements (UI fields, request/response schemas, placeholders, metadata, formatting) unless they are explicitly processed in the algorithmic steps.
+- There must be only one initialization function and only one main biophysical process function across the entire module. Do not define or reference additional init/process functions in any other file.
+- Define datatypes for all inputs and outputs, in the code and in comments.
+- Do not keep useless functions, skip them (function that do nothing inside their body, return dummy value, etc...)
+- BE RELEVANT TO THE CODE.
+
+# IMPORTANT FINAL INSTRUCTIONS
+- Produce only the Python module content described above, and nothing else.
+- Use the source code file as primary truth for names, typing, defaults, and behavior. When the source omits something required by a clear interface (types, units, ranges), synthesize conservative, safe values and document them in COMMENTS.
+- If any decision required you to remove or rename a symbol present in input interfaces but absent in source, note that action and the reason in COMMENTS.
+- If you cannot confidently merge due to contradictory evidence and the source code is silent, pick the safer, more general option and note this in COMMENTS.
