@@ -1,0 +1,121 @@
+# ROLE AND GOAL
+- You will be provided with multiple JSON interface descriptions of the same component extracted from the same source code file. You will also be provided the source code file from which those JSONs were generated.
+- Produce one merged, canonical JSON interface description for this component. This is a merge, not a concatenation: deduplicate, normalize, and resolve conflicts using the rules below and the source code as the primary source of truth.
+
+# OUTPUT FORMAT
+- Return exactly one JSON object with the top-level keys: init, process, inputs, outputs, functions, tests.
+- Do not include any additional commentary or keys beyond these unless explicitly present across all inputs and necessary per the rules.
+
+# GENERAL MERGING PRINCIPLES
+1. Source-of-truth and precedence
+- The provided source code file is authoritative for function names, variable roles (input, output, state, auxiliary), and existence. If any JSON claims an item that is not in or contradicts the source code, prefer the code.
+- When multiple JSONs disagree on attributes, use the most specific, constrained, or widely-agreed value, resolved in this order: 
+	a) Value implied by the source code (naming, role, data type, array vs scalar, constants). 
+	b) Value that is consistent with the majority of JSON files. 
+	c) The tightest numeric domain (larger min, smaller max) when not in conflict with code. 
+	d) The clearest and most complete description text. If needed, synthesize a concise, non-duplicative description from multiple sources.
+- If a variable appears both as a parameter (constant) and as a variable (exogenous), prefer parameter if the code treats it as configuration and variable otherwise.
+- If conflict remains and the code is silent, pick the most common or most recent-looking convention among the inputs; if still ambiguous, keep the safer, more general value.
+
+2. Canonical naming and normalization
+- Keep names as they appear in the code. For known aliases, normalize to the canonical name: • DOUBLELIST, DOUBLEARRAY -> DOUBLEARRAY • degC, C -> degC • TDL_local -> TDL • TMA_new -> TMA
+- Drop scratch-only helper values that are not part of the public interface (e.g., a lone variable like x used only internally for rounding) unless the source code exposes them as part of the module interface.
+
+3. Canonical data typing, units, and lengths
+- Allowed datatypes: INT, DOUBLE, DOUBLEARRAY, DOUBLELIST, STRING, DATE, INTARRAY. Normalize synonyms accordingly.
+- Ranges: Keep numeric min/max where known and consistent. Otherwise use "-".
+
+4. Roles and categories
+- Keep inputtype as parameter for constants/configuration, variable otherwise.
+- Use categories: constant, exogenous, state, auxiliary as follows:
+	- constant for configuration/parameters that do not change during a run.
+	- exogenous for daily weather/driver data.
+	- state for state-carryover variables updated each time step.
+	- auxiliary for derived/calculated helpers.
+- If a state variable appears in inputs across some files and in outputs across others, keep it both as an input (state-carryover) and as an output (updated), but list it once in each section.
+
+5. init and process sections
+- init.name must match the true initializer symbol in the source code.
+- process.name is the main routine name from the code. Compose a concise process.description from the best of the inputs.
+
+6. inputs array
+- Deduplicate by name. Normalize fields as above: name, description, inputtype, category, datatype, len, min, max, default, unit, uri.
+- For uri, normalize to "-" if missing or empty.
+- Ensure all layer-wise variables reference len.
+
+7. Comments
+- Note any misunderstanding, ambigousity, assumptions done during the creation of the JSON object in the "comments" field.
+
+
+# OUTPUT SCHEMA
+```json
+{
+  "init": 
+    {
+      "name": ""
+    },
+  "process":
+    {
+      "name": "",
+      "description": ""
+    },
+  "inputs": [
+    {
+      "name": "",
+      "description": "",
+      "inputtype": "",
+      "category": "",
+      "datatype": "",
+      "len": "",
+      "min" : "",
+      "max" : "",
+      "default" : "",
+      "unit" : "",
+      "uri" : ""
+    }
+  ],
+  "outputs": [
+    {
+      "name": "",
+      "description": "",
+      "datatype": "",
+      "category": "",
+      "len": "",
+      "min" : "",
+      "max" : "",
+      "default" : "",
+      "unit" : "",
+      "uri" : ""
+    }
+  ],
+  "functions": [
+    {
+      "name": "",
+      "description": ""
+    }
+  ],
+  "tests": [
+    {
+      "name": "",
+      "description": "",
+      "inputs": [
+        {
+          "name" : "",
+          "value": ""
+        }
+      ],
+      "outputs": [
+        {
+          "name" : "",
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "comments": [
+	{
+		"comment" : ""
+	}
+	]
+}
+```

@@ -163,14 +163,26 @@ def check_code_composite(model_package, report_path, iteration):
   try:
     test.to_ast(source)
     with open(report_path, 'a') as rf:
-      rf.write(f"Successfully generated the AST for the composite model --- {mc_name}Component.pyx ---\n\n")
+      rf.write(f"Successfully generated the AST for the composite model --- {mc_name}Component.pyx ---\n")
   except Exception as e:
     with open(report_path, 'a') as rf:
       rf.write(f"ERROR ModelComposite when generating the AST --- {mc_name}Component.pyx --- :\n{e}\n\n")
     raise
 
+  try:
+    test.translate()
+    with open(report_path, 'a') as rf:
+      rf.write(f"Successfully translated the composite model --- {mc_name}Component.pyx ---\n\n")
+  except Exception as e:
+    with open(report_path, 'a') as rf:
+      rf.write(f"ERROR ModelComposite when translating --- {mc_name}Component.pyx --- :\n{e}\n\n")
+    raise
+
   with open(report_path, 'a') as rf:
     rf.write("All files parsed and AST generated successfully.\n\n")
+
+
+  #Ajouter le code transformé ici
     
   verif_result = True
   return verif_result

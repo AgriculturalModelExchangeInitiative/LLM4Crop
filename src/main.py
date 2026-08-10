@@ -2,7 +2,7 @@ import argparse
 import os
 import sys
 from utilities import check_files
-from generation import maj_component, process_unit, process_composite, create_crop2ml_package, generate_component, clean_pyx
+from generation import maj_component, process_unit, process_composite, create_crop2ml_package, clean_pyx, generate_component
 from verification import check_code_composite, debug_code, debug_xml, generate_pyx_composite, generate_pyx_unit, check_code_unit
 import concurrent.futures
 
@@ -133,7 +133,7 @@ if __name__ == "__main__":
       sys.exit()
 
     # Clean pyx generated
-    #clean_pyx(package, API_KEY_PATH, CLEANER, SMALL_MODEL, MAX_PARALLEL_UNITS)
+    clean_pyx(package, API_KEY_PATH, CLEANER, SMALL_MODEL, MAX_PARALLEL_UNITS)
     
     # Verifying each pyx code of each model units are correct
     iteration = 0
