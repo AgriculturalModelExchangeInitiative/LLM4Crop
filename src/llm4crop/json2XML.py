@@ -1,7 +1,8 @@
 from pathlib import Path
 import xml.dom.minidom
 import xml.etree.ElementTree as ET
-from utilities import extract_text, log_comments
+
+from .utilities import extract_text, log_comments
 
 #-----------------------------------------------------------------
 # Function to convert JSON data to XML format
