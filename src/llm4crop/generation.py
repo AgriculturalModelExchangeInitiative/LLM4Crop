@@ -1,13 +1,15 @@
-from path import Path
+from pathlib import Path
 from cookiecutter.main import cookiecutter
-import shutil
-from openAI_interaction import create_composite_metadata, create_unit_metadata, create_python_code, create_algo_metadata, create_consensus_python, create_clean_code
-from json2XML import json_to_XML_composite, json_to_XML_unit
-from transpiler import transformation, transpile_functions
-import concurrent.futures
-from pycropml.cyml import transpile_package
-import xml.etree.ElementTree as ET
 from textwrap import dedent
+
+import shutil
+import concurrent.futures
+import xml.etree.ElementTree as ET
+from pycropml.cyml import transpile_package
+
+from .openAI_interaction import create_composite_metadata, create_unit_metadata, create_python_code, create_algo_metadata, create_consensus_python, create_clean_code
+from .json2XML import json_to_XML_composite, json_to_XML_unit
+from .transpiler import transformation, transpile_functions
 
 #-----------------------------------------------------------------
 # Function to transform a modelUnit in Crop2ML

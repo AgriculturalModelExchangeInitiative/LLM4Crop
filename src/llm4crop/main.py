@@ -1,10 +1,11 @@
 import argparse
 import os
 import sys
-from utilities import check_files
-from generation import maj_component, process_unit, process_composite, create_crop2ml_package, clean_pyx, generate_component
-from verification import check_code_composite, debug_code, debug_xml, generate_pyx_composite, generate_pyx_unit, check_code_unit
 import concurrent.futures
+
+from .utilities import check_files
+from .generation import maj_component, process_unit, process_composite, create_crop2ml_package, clean_pyx, generate_component
+from .verification import check_code_composite, debug_code, debug_xml, generate_pyx_composite, generate_pyx_unit, check_code_unit
 
 #-----------------------------------------------------------------
 # CONFIGURATION
